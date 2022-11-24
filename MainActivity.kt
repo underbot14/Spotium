@@ -1,7 +1,9 @@
 package com.example.spotium
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatDialogFragment
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -31,5 +33,8 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
+    fun open_sign(view: View){
+        val open = Intent(this, SignIn::class.java)
+        startActivity(open)
+    }
 }
